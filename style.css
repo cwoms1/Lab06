@@ -1,0 +1,7 @@
+/* Define styles for larger screens */
+/* Add your desktop styles here */
+
+/* Define styles for smaller screens */
+@media (max-width: 768px) {
+    /* Add responsive styles here */
+}
