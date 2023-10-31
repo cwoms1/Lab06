@@ -3,5 +3,29 @@
 
 /* Define styles for smaller screens */
 @media (max-width: 768px) {
-    /* Add responsive styles here */
+    /* Change font size for smaller screens */
+    h1 {
+        font-size: 28px;
+    }
+
+    /* Adjust margins and paddings for smaller screens */
+    ul, ol {
+        margin-left: 10px;
+    }
+
+    /* Change layout for smaller screens */
+    li {
+        display: block;
+        padding: 5px 0;
+    }
+
+    /* Additional layout adjustments for smaller screens */
+    body {
+        padding: 10px;
+    }
+
+    ul {
+        list-style-type: square;
+    }
 }
+
