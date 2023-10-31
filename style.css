@@ -1,20 +1,74 @@
-/* Define styles for larger screens */
-/* Add your desktop styles here */
+/* Reset default margin and padding */
+body, h1, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
 
-/* Define styles for smaller screens */
-@media (max-width: 768px) {
-    /* Change font size for smaller screens */
-    h1 {
-        font-size: 28px;
-    }
-    
-    /* Adjust margins and paddings for smaller screens */
-    ul, ol {
-        margin-left: 10px;
-    }
-    
-    /* Change layout for smaller screens */
-    .column {
-        width: 100%; /* Make columns full width on small screens */
-    }
+/* Set background color and font styles for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Center the main content on larger screens */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Style for ingredients on the left */
+.ingredients {
+    flex: 1; /* Take up half of the available space */
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ingredients p {
+    font-weight: bold;
+}
+
+.ingredients ul {
+    list-style-type: disc;
+}
+
+/* Style for instructions on the right */
+.instructions {
+    flex: 1; /* Take up half of the available space */
+    background-color: #ffffff;
+    margin-left: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.instructions p {
+    font-weight: bold;
+}
+
+.instructions ol {
+    list-style-type: decimal;
+}
+
+/* Style for the bottom section */
+.bottom-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-section p {
+    margin-bottom: 15px;
+}
+
+/* Style for links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
